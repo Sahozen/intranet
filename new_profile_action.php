@@ -18,7 +18,7 @@ $created_at = date("Y-m-d H:i:s");
 // Connexion au serveur SQL (SQL Server)
 $server   = "172.16.1.4";
 $database = "RHDB"; // Nom de la base de données
-$uid      = "admin";
+$uid      = "root";
 $pwd      = "Azerty123!";
 
 try {
