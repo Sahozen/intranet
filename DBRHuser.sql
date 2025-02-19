@@ -20,3 +20,6 @@ CREATE TABLE import_users (
 )
 ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4;
+
+$sql = "INSERT INTO profiles (username, firstname, lastname, email, service, created_at, active)
+        VALUES (:username, :firstname, :lastname, :email, :service, :created_at, 1)";
