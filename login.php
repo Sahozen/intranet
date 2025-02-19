@@ -10,7 +10,7 @@ $ldapPort    = 389; // Port LDAP (389 pour non sécurisé, 636 pour LDAPS)
 $ldapBaseDN  = "ou=Utilisateurs,dc=alphatech,dc=local"; // Base DN pour les utilisateurs RH
 
 // Connexion au serveur LDAP
-$ldapConn = ldap_connect($ldapServer, $ldapPort) or die("Impossible de se connecter au serveur LDAP.");
+$ldapConn = ldap_connect($ldapServers, $ldapPort) or die("Impossible de se connecter au serveur LDAP.");
 
 // Paramétrage de la version du protocole et des options
 ldap_set_option($ldapConn, LDAP_OPT_PROTOCOL_VERSION, 3);
