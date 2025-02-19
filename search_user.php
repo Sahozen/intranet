@@ -14,7 +14,7 @@
       // Connexion au serveur SQL
       $server   = "172.16.1.4";
       $database = "RHDB";
-      $uid      = "admin";
+      $uid      = "root";
       $pwd      = "Azerty123!";
 
       try {
