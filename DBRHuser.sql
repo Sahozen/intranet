@@ -1,5 +1,5 @@
 CREATE TABLE import_users (
-    id INT PRIMARY KEY IDENTITY(1,1),  -- pour SQL Server, ou AUTO_INCREMENT pour MySQL
+    id INT AUTO_INCREMENT PRIMARY KEY,
     GivenName NVARCHAR(50) NOT NULL,
     Surname NVARCHAR(50) NOT NULL,
     SamAccountName NVARCHAR(50) NOT NULL,
@@ -16,6 +16,5 @@ CREATE TABLE import_users (
     Country NVARCHAR(10) NULL,
     FullName NVARCHAR(100) NULL,
     Initials NVARCHAR(10) NULL,
-    DateInserted DATETIME DEFAULT GETDATE()
+    DateInserted DATETIME DEFAULT CURRENT_TIMESTAMP
 );
-
